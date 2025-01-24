@@ -1,5 +1,5 @@
 name= input("What is your name: ")
-age= int(input("Enter your age: ")) # Here the user enters his or her name
+age= float(input("Enter your age in years: ")) # Here the user enters his or her name
 
 Age = age*365 #the conversion fron year to days lies on this operation
 
