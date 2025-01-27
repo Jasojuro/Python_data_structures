@@ -8,7 +8,7 @@ i=0
 while i<4:
     x= int(input("Enter the number you think is correct: "))
     if x==a:
-        print("Congratulation!!. You Had it corrct")
+        print("Congratulation!!.You Had it corrct")
         break
     else:
         print("Your number is incorrect")
