@@ -9,7 +9,7 @@ def add():
             number=float(u_input)
             total += number
         except ValueError:
-            input("Enter a number: ")#This message is diplayed if a number is not entered
+            input("Invalid. Enter a number: ")#This message is diplayed if a number is not entered
     return total
 
 #Subtraction
@@ -28,7 +28,7 @@ def sub():
             else:
                 total -= number
         except ValueError:
-            input("Enter a number: ")#This message is diplayed if a number is not entered
+            input("Invalid. Enter a number: ")#This message is diplayed if a number is not entered
     return total
 
 
@@ -48,7 +48,7 @@ def mul():
             else:
                 total *= number
         except ValueError:
-            input("Enter a number: ")#This message is diplayed if a number is not entered
+            input("Invalid. Enter a number: ")#This message is diplayed if a number is not entered
     return total
 
 def div():
@@ -68,7 +68,7 @@ def div():
                     raise ZeroDivisionError("Division by 0 is not possible.") #Displays this message if 0 is inputed as second number and above
                 total /= number
         except ValueError:
-            input("Enter a number: ") #This message is diplayed if a number is not entered
+            input("Invalid. Enter a number: ") #This message is diplayed if a number is not entered
         except ZeroDivisionError as i:
            print(i)
         
@@ -91,6 +91,8 @@ match Operation:
     case "4":
         quo=div()
         print(f"The quotient of the numbers is : {quo}")
+    case _:
+        print("Invalid choice. ")
     
 
 
