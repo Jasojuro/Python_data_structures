@@ -66,7 +66,7 @@ def div():
     return total
 
 print("Enter 1 for Addition, 2 for subtraction, 3 for multiplication,4 for division ")
-Operation = input("What operation do you want to perform?")
+Operation = input("What operation do you want to perform?: ")
 
 match Operation:
     case "1":
