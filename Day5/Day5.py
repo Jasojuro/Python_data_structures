@@ -18,6 +18,8 @@ def sub():
     while True:
         u_input = input("Enter a number to subtract ( type 'done' to stop):  ")#permits the user to enter all the needed to be added until "done" is entered
         if u_input=="done":
+            if total is None:
+                return 0
             break
         try:
             number=float(u_input)
@@ -36,6 +38,8 @@ def mul():
     while True:
         u_input = input("Enter a number to multiply ( type 'done' to stop):  ")#permits the user to enter all the needed to be added until "done" is entered
         if u_input=="done":
+            if total is None:
+                return 0
             break
         try:
             number=float(u_input)
@@ -72,7 +76,7 @@ def div():
     return total
 
 print("Enter 1 for Addition, 2 for subtraction, 3 for multiplication,4 for division ")
-Operation = input("What operation do you want to perform?: ") #Coice of the operation to be performed
+Operation = input("What operation do you want to perform?: ") #Choice of the operation to be performed
 
 match Operation:
     case "1": 
