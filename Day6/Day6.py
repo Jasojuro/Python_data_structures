@@ -1,4 +1,4 @@
-def main():
+def shop():
     cart = []  # Initialize an empty shopping cart (list of items)
     while True:
         print("\n*** Your Shopping Cart ***")
@@ -18,7 +18,8 @@ def main():
                 print("Your cart is empty.")
             else:
                 print("\n*** Your Cart ***")
-                print(cart)
+                for index, item in enumerate(cart, start=1): # Enumerates the items in cart starting from 1
+                    print(f"{index}. {item}")
 
         elif choice == "3":
             if not cart:
@@ -45,4 +46,4 @@ def main():
             print("Invalid choice. Please enter a number between 1 and 4.")
 
 
-main()
+shop()
