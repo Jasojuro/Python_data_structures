@@ -10,7 +10,7 @@ def sets():
         print("5. Display the intersection of list 1 and list 2")
         print("6. Display the intersection of list 1 and list 2")
         print("7. Exit")
-        choice = input("Enter your choice (1-5): ")
+        choice = input("Enter your choice (1-7): ")
 
         if choice == "1":
             item = input("Enter the item to add: ")
@@ -53,11 +53,15 @@ def sets():
                     except ValueError:
                         print("Please enter a valid number.")
         elif choice == "5":
-            w = set1.union(set2)
+            s1=set(set1)
+            s2=set(set2)
+            w = s1.union(s2)
             print(w)
 
         elif choice == "6":
-            y = set1.intersection(set2)
+            s1=set(set1)
+            s2=set(set2)
+            y = s1.intersection(s2)
             print(y)
         
         elif choice == "7":
