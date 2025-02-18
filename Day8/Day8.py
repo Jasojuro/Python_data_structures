@@ -7,7 +7,7 @@ def sets():
         print("2. Add item to list 2")
         print("3. Remove item from list 1")
         print("4. Remove item from list 2")
-        print("5. Display the intersection of list 1 and list 2")
+        print("5. Display the union of list 1 and list 2")
         print("6. Display the intersection of list 1 and list 2")
         print("7. Exit")
         choice = input("Enter your choice (1-7): ")
@@ -22,9 +22,9 @@ def sets():
           print(f"'{item}' added to list 2.")
         elif choice == "3":
                 if not set1:
-                    print("Your cart is empty.")
+                    print("List 1 is empty.")
                 else:
-                    print("\n*** Your Cart ***")
+                    print("\n*** List 1 ***")
                     for index, item in enumerate(set1, start=1):
                         print(f"{index}. {item}")
                     try:
@@ -38,9 +38,9 @@ def sets():
                         print("Please enter a valid number.")
         elif choice == "4":
                 if not set2:
-                    print("Your cart is empty.")
+                    print("List 2 is empty.")
                 else:
-                    print("\n*** Your Cart ***")
+                    print("\n*** List 2 ***")
                     for index, item in enumerate(set2, start=1):
                         print(f"{index}. {item}")
                     try:
@@ -69,7 +69,7 @@ def sets():
             break
 
         else:
-            print("Invalid choice. Please enter a number between 1 and 5.")
+            print("Invalid choice. Please enter a number between 1 and 7.")
 
 
 sets()
